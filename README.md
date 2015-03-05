@@ -1,6 +1,6 @@
 ## test driven has_many / belongs_to, collection select
 
-* Install rspec
+* Install rspec-rails, capybara
 * Write a test to force you to write the code you want to see in the world:
   * Each Cat show page should list the toys that cat owns.
   * Toy index page should list the cat that owns each of the toys listed.
