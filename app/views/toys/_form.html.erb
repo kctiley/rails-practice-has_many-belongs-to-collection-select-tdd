@@ -5,9 +5,10 @@
     <%= f.text_field :name, class: "form-control" %>
   </div>
 
-  <em>insert collection select for Cat</em>
-  <br>
-  <br>
+  <div class="form-group">
+    <%= f.label :cat %>
+    <%= f.collection_select(:cat_id, Cat.all, :id, :name, {prompt: 'Select me now'}, {class: 'form-control'}) %>
+  </div>
 
   <div class="form-group">
     <%= f.submit class: "btn btn-primary" %>
